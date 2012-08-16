@@ -51,7 +51,7 @@
 		version: '2.0.6',
 
 		defaults: {
-			padding : 15,
+			padding : [0, 0, 0, 0], //15
 			margin  : 20,
 
 			width     : 800,
@@ -69,14 +69,14 @@
 			autoCenter  : !isTouch,
 			fitToView   : true,
 			aspectRatio : false,
-			topRatio    : 0.5,
-			leftRatio   : 0.5,
+			topRatio    : 0.2, //0.5
+			leftRatio   : 0.2, //0.5
 
-			scrolling : 'auto', // 'auto', 'yes' or 'no'
+			scrolling : 'no', // 'auto', 'yes' or 'no'
 			wrapCSS   : '',
 
 			arrows     : true,
-			closeBtn   : false, //true
+			closeBtn   : true, //true
 			closeClick : false,
 			nextClick  : false,
 			mouseWheel : true,

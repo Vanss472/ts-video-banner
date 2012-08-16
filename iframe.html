@@ -13,12 +13,74 @@
 
 	<link rel="stylesheet" type="text/css" href="css/banner-stylesheet.css">
 
-	 
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.fancybox")
+			.attr('rel', 'group')
+			.fancybox({
+				'showCloseButton' : false,
+				'transitionIn'	:	'elastic',
+				'transitionOut'	:	'elastic',
+				'speedIn'		:	600, 
+				'speedOut'		:	200, 
+				'overlayShow'	:	false,
+				'arrows'        : false,
+				'onComplete': function() {
+            		$.fancybox.resize();
+        		}
+				 
+			});
+			 
+		});
+	</script>
 
 </head>
 
 <body>
-	<iframe src="index.html" height="300" width="735" frameBorder="0"></iframe>
+	<div class="video_banner">
+ 		<div class="column1">
+           <h4>Training Plan Engine</h4>
+           <p>
+           	Welcome to your Training Plan Engine.  A little setup is needed, but once you create a few favorite sessions and session components, your Engine will provide the boost to help you feel even more organized and efficient as you plan, build and share training programs.
+           </p>
+ 		</div>
+
+ 		<div class="column2">
+ 			<h5>Here are a few tips & tricks to get you going...</h5>
+			<ul class="bullet">
+		 		<li>How to create <a class="fancybox" href="#favorites"><b>Favorites</b></a></li>
+		 		<li><a class="fancybox fancybox.ajax" href="sharing.html"><b>Sharing</b></a> plans in just a click</li>
+		 		<li><a class="fancybox fancybox.ajax" href="tpacesathletes.html"><b>Copy & Paste</b></a> is that easy Training Paces for your athletes</li>
+		 		<li>Using Trainsweet’s integrated <a class="fancybox fancybox.ajax" href="tpaces.html"><b>Training Paces</b></a> </li>
+		 		<li>Use <a class="fancybox fancybox.ajax" href="goals.html"><b>Plan Goals</b></a> to track volume and velocity</li>
+			</ul>
+
+		</div>
+
+
+<!--INLINE CONTENT HERE-->
+			<div id="favorites" style="max-width:700px;display: none;">
+				
+				<div class="left">
+				 <iframe width="386" height="217" src="https://www.youtube.com/embed/26UkVlnW3-k?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				
+				<div class="right arrow_box">
+				    <p>
+					Phasellus et ligula vel diam ullamcorper volutpat. Integer rhoncus rhoncus aliquam. Aliquam erat volutpat. Aenean luctus vestibulum placerat. Quisque quam neque, lacinia aliquet eleifend ac, aliquet blandit felis. 
+					</p>
+				</div>
+
+				<!--<div class="buttons">
+					<a class="closeme" href="javascript:jQuery.fancybox.close();">Close me</a> 
+				</div>-->
+
+ 			</div>
+
+
+
+	</div>
+	
 </body>
 
 </html>
