@@ -76,7 +76,7 @@
 			wrapCSS   : '',
 
 			arrows     : true,
-			closeBtn   : true,
+			closeBtn   : false, //true
 			closeClick : false,
 			nextClick  : false,
 			mouseWheel : true,
